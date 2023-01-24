@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+
+    <title>D/N match</title>
+</head>
+ 
+<body>
+
+    <nav class="navbar navbar-dark greenNav" id="navbar">
+        <div class="container-fluid">
+<a href="index.html" style="color:white; font-weight:bold; text-decoration:none; font-size:120%;">  Back </a>
+            <a style="color:white; text-decoration:none;  font-weight:bolder;" class=" ms-auto"><i class="bi bi-arrow-repeat ms-auto" onclick="changeTheme()"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar ends here      ......................................................... -->
+    <div class="flex">
+        <div class="team1">
+        <div class="card containerScore  " id="themeBody" style="width: 21em; text-align:center;">
+            <div class="card-body">
+                <h3 class="card-title " style="text-align: center;">Team 1</h3>
+                <div class="row card-text">
+
+                    <div class="col">
+                        <span>Score:</span>
+                        <span id="score">0</span>
+                        <span class="col">/</span>
+                        <span id="out">0</span>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <span>Overs:</span>
+                        <span>(</span>
+                        <span id="over">0</span>
+                        <span id="">.</span>
+                        <span id="ball">0</span>
+                        <span>)</span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+
+                        <span>Rem:</span>
+                        <span>(</span>
+                        <span id="overRemain">20</span>
+                        <span id="">.</span>
+                        <span id="ballRemain">0</span>
+                        <span>)</span>
+                    </div>
+                </div>
+                    <h2 style=" text-align:center; margin-top:22px; font-size:1.5em;">Vs</h2>
+                    <!-- // second team settings ..................................... -->
+<div class="team2">
+                    <div class="card-body " id = "themeBody" style="width: 90%; text-align:center;">
+                        <h3 class="card-title">Team 2</h3>
+                        <div class="row ">
+                            <div class="col">
+                                <span>Score:</span>
+                                <span id="score1">0</span>
+                                <span class="col">/</span>
+                                <span id="out1">0</span>
+                            </div>
+
+                        </div>
+
+                        <div class="row ">
+                            <div class="col">
+                                <span>Overs:</span>
+                                <span>(</span>
+                                <span id="over1">0</span>
+                                <span id="">.</span>
+                                <span id="ball1">0</span>
+                                <span>)</span>
+                            </div>
+                        </div>
+
+                        <div class="row ">
+                            <div class="col">
+                                <span>(</span>
+                                <span id="overRemain1">20</span>
+                                <span id="">.</span>
+                                <span id="ballRemain1">0</span>
+                                <span>)</span>
+                                <span id="ballRemain1" class="toBat">Yet to bat.</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>  
+
+        </div>
+        </div>
+        </div>
+        </div>
+        <!-- End of first Card i.e Team 1 -->
+    </div>
+        <div class="card containerScore " style="width: 90%; text-align:center; " id="single">
+        
+
+            <center>
+                <div class="buttons " id="themeBody" >
+                    <button id="single" class="runs btn btn-outline-light" onclick="addRuns(0)"><i
+                            class="bi i bi-0-circle-fill"></i></button>
+                    <button id="single" class="runs btn btn-outline-light" onclick="addRuns(1)"><i
+                            class="bi i bi-1-circle-fill"></i></button>
+                    <button id="single" class="runs btn btn-outline-light " onclick="addRuns(2)"><i
+                            class="bi i bi-2-circle-fill"></i></button>
+                    <button id="single" class="runs btn btn-outline-light " onclick="addRuns(3)"><a><i
+                                class="bi i bi-3-circle-fill"></i></button>
+                    <button id="single" class="runs btn btn-outline-light" onclick="addRuns(4)"><i
+                            class="bi i bi-4-circle-fill"></i></button>
+                    <button id="single" class="runs btn btn-outline-light " onclick="addRuns(6)"><i
+                            class="bi i bi-6-circle-fill"></i></button>
+                    <button id="single" class="runs btn btn-outline-light " onclick="wide()">WIDE</button>
+                    <button id="single" class="runs btn btn-outline-light " onclick="outs()">OUT</button>
+                    <button id="single" class="runs btn btn-outline-light " onclick="rewind()">REWIND</button>
+                    <!-- <button onclick="obj.item()">Click me</button> -->
+                </div>
+
+            </center>
+        </div>
+    
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>  
+            </a>
+            <span class="mb-3 mb-md-0 text-muted" style=" color: #089a75;">© 2022 Abbasi Dev, Inc</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                        <use xlink:href="#twitter"></use>
+                    </svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                        <use xlink:href="#instagram"></use>
+                    </svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+                        <use xlink:href="#facebook"></use>
+                    </svg></a></li>
+        </ul>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

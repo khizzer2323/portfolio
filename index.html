@@ -1,105 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-    <script src="https://kit.fontawesome.com/f686eeb09c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/f686eeb09c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="index.css" />
     <title>Khizar Abbasi</title>
-</head>
-<body><div class="mainPage">
-    
-    <nav class="navbar navbar-dark navbar-expand-lg navbar-expand-md navbar-expand-sm">
+  </head>
+  <body id="intro">
+    <section class="all">
+    <div class="mainPage">
+      <nav
+        class="navbar navbar-dark navbar-expand-lg navbar-expand-md navbar-expand-sm"
+      >
         <div class="container-fluid">
-          <span class="navbar-brand underlined" style="font-weight:bolder" href="#" >Khizar Abbasi.
-            <div style="width:100%; height:3px; border-radius:100px; background-image:linear-gradient(to bottom right,rgb(4, 93, 4),lightgreen)"></div>
+          <span
+            class="navbar-brand underlined"
+            style="font-weight: bolder"
+            href="#"
+            >Khizar Abbasi.
+            <div
+              style="
+                width: 100%;
+                height: 3px;
+                border-radius: 100px;
+                background-image: linear-gradient(
+                  to bottom right,
+                  rgb(4, 93, 4),
+                  lightgreen
+                );
+              "
+            ></div>
           </span>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" style="color:green;" aria-current="page" href="#">HOME</a>
+                <a
+                  class="nav-link active underline"
+                  style="color: green"
+                  aria-current="page"
+                  href="#"
+                  >HOME</a
+                >
                 <!-- <div style="width:100%; height:2px; background-color:green"></div> -->
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">FEATURES</a>
+                <a class="nav-link underline" href="#projects">PROJECTS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#technologies">TECHNOLOGIES</a>  
-               </li>
+                <a class="nav-link underline" href="#technologies"
+                  >TECHNOLOGIES</a
+                >
+              </li>
             </ul>
           </div>
         </div>
       </nav>
-      
+
+      <div class="socialLinks"  >
+        <a
+          class="socialLink"
+          style="text-decoration: none; color: white; text-align: center"
+          href="https://github.com/khizzer2323?tab=repositories"
+          target="blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          class="socialLink"
+          href="https://twitter.com"
+          target="blank"
+          style="text-decoration: none; color: white; text-align: center"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a
+          class="socialLink"
+          href="https://instagram.com"
+          target="blank"
+          style="text-decoration: none; color: white; text-align: center"
+          ><i class="fa-instagram fa-brands"></i
+        ></a>
+      </div>
+
+      <div id ="blur"></div>
       <div class="introduction">
-<h1>Who am I?</h1>
-<p>My name is  <span style="color:rgb(65, 210, 65); font-size:120%;font-weight:bold"> Khizar Abbasi. </span>I am a CS student and I am a Junior Web Developer. I am currently learning Advanced level Javascript. I have experience with HTML, CSS and Javascript. </span>
-<br><a class="btn btn-success project" href="#projects">Projects</a>
-<a class="btn  btn-outline-light">Contact</a>
-</div>
+        <h1>Who am I?</h1>
+        <p>
+          My name is
+          <span
+            style="color: rgb(65, 210, 65); font-size: 120%; font-weight: bold"
+          >
+            Khizar Abbasi. </span
+          >I am a CS student and I am a Junior Web Developer. I am currently
+          learning Advanced level Javascript. I have experience with HTML, CSS
+          and Javascript.
+        </p>
+        <br /><a class="btn btn-success project underline" href="#projects"
+          >Projects</a
+        >
+        <a class="btn btn-outline-light underline" onclick="func.sendEmail()">Contact</a>
+      </div>
     </div>
-    <div style="width:30%;  text-align:center; background-image:linear-gradient(to bottom right, rgb(0, 67, 0),rgb(53, 223, 124)); height:8px; border-radius: 100px;  margin:auto; margin-top:40px;"></div>
-  <section class="projects" id="projects" >
-<h1 class="shadeH1">Projects</h1> 
+    <div
+      style="
+        width: 30%;
+        text-align: center;
+        background-image: linear-gradient(
+          to bottom right,
+          rgb(0, 67, 0),
+          rgb(53, 223, 124)
+        );
+        height: 8px;
+        border-radius: 100px;
+        margin: auto;
+        margin-top: 40px;
+      "
+    ></div>
+    <section class="projects" id="projects">
+      <h1 class="shadeH1">Projects</h1>
 
-<div class="flexBox" >
-<div class="flexItem">
-  <img src="bg/newfalcon.png">
-  <h1 class="projectHead">New Falcon Hazara</h1>
-  <p class="projectPara">It is a buisness website that I created using HTML, CSS, Javascript.I also created a server end version of this website. </p>
-  <button class="btn btn-success visit">Visit</button>
-</div>
-<div class="flexItem">
-  <img src="bg/diceroll.png">
-  <h1 class="projectHead">Halal Game</h1>
-  <p class="projectPara"> This is a very simple game project that I created again using HTML, CSS and Javascript. </p>
-  <button class="btn btn-success visit" >Play !</button>
-</div>
-</div>
-</div>  
-<div class="flexBox"><div class="flexItem">
-  <img src="bg/guessNo.png">
-  <h1 class="projectHead">Guess the No</h1>
-  <p class="projectPara">This is a very simple Game. In this game we try to guess a number and we have 10 chances to do it. If we do it successfully within those 10 chances we win the game else we loose.</p>
-  <button class="btn btn-success visit" >Play !</button>
-</div>
+      <div class="flexBox">
+        <div class="flexItem">
+          <img src="bg/newfalcon.png" />
+          <a href="buisness/index.html" target="_blank"
+            ><h1 class="projectHead">New Falcon Hazara</h1></a
+          >
+          <div
+            style="
+              width: 20%;
+              height: 2px;
+              background-image: linear-gradient(
+                to bottom right,
+                green,
+                lightgreen
+              );
+              margin: auto;
+              margin-bottom: 5px;
+            "
+          ></div>
+          <p class="projectPara">
+            It is a buisness website. I also created a back-end version of this
+            website made using Nodejs.
+          </p>
+          <div class="flexTechBtn">
+            <p class="btn btn-dark">HTML</p>
+            <p class="btn btn-dark">CSS</p>
+            <p class="btn btn-dark">JAVASCRIPT</p>
+            <p class="btn btn-dark">BOOTSTRAP</p>
+          </div>
 
-<div class="flexItem">
-  <img src="bg/cricket.png">
-  <h1 class="projectHead">Cricket Score monitoring app</h1>
-  <p class="projectPara">This is a Cricket score storing app. You can add all the scores inside this app and it will store that data dynamically.</p>
-  <button class="btn btn-success visit" >Visit</button>
+          <a href="buisness/index.html" target="blank"
+            ><button class="btn btn-success visit">Visit</button></a
+          >
+        </div>
+        <div class="flexItem">
+          <img src="bg/diceroll.png" />
+          <a href="halalGame/index.html" target="blank"
+            ><h1 class="projectHead">Halal Game</h1></a
+          >
+          <div
+            style="
+              width: 20%;
+              height: 2px;
+              background-image: linear-gradient(
+                to bottom right,
+                green,
+                lightgreen
+              );
+              margin: auto;
+              margin-bottom: 5px;
+            "
+          ></div>
+          <p class="projectPara">
+            To win this game you need to complete 100 score before your
+            opponent.
+          </p>
+          <div class="flexTechBtn">
+            <p class="btn btn-dark">HTML</p>
+            <p class="btn btn-dark">CSS</p>
+            <p class="btn btn-dark">JAVASCRIPT</p>
+            <p class="btn btn-dark">BOOTSTRAP</p>
+          </div>
 
-</div>
-</div>
-</section>
-<div style="width:30%;  text-align:center; background-image:linear-gradient(to bottom right, rgb(0, 67, 0),rgb(53, 223, 124)); height:8px; border-radius: 100px;  margin:auto; margin-top:40px;"></div>
-<div class="technologies">
-  <h1 class="shadeH1" id="technologies">Technologies</h1>
-  <div class="technoFlex">
-    <div class="technoItems">
-      <h1 class="projectHead technoItmH1"><i class="fa-brands fa-square-js"></i>  Front-End</h1>
-      <p class="technoPara">I have worked with several different technologies in front-end . I learnt Html, Css, Js, Jquery, Bootstrap, Tailwind Css as front-end designing.</p>
+          <a href="halalGame/index.html" target="blank"
+            ><button class="btn btn-success visit">Play !</button></a
+          >
+        </div>
+      </div>
+
+      <div class="flexBox">
+        <div class="flexItem">
+          <img src="bg/guessNo.png" />
+          <a href="guessNumber/index.html" target="blank">
+            <h1 class="projectHead">Guess the No</h1></a
+          >
+          <div
+            style="
+              width: 20%;
+              height: 2px;
+              background-image: linear-gradient(
+                to bottom right,
+                green,
+                lightgreen
+              );
+              margin: auto;
+              margin-bottom: 5px;
+            "
+          ></div>
+          <p class="projectPara">
+            In this game we have to guess a number within 10 chances. If we do
+            it successfully within those 10 chances we win the game else we
+            loose.
+          </p>
+          <div class="flexTechBtn">
+            <p class="btn btn-dark">HTML</p>
+            <p class="btn btn-dark">CSS</p>
+            <p class="btn btn-dark">JAVASCRIPT</p>
+            <p class="btn btn-dark">BOOTSTRAP</p>
+          </div>
+
+          <a href="guessNumber/index.html" target="blank"
+            ><button class="btn btn-success visit">Play !</button></a
+          >
+        </div>
+
+        <div class="flexItem">
+          <img src="bg/cricket.png" />
+          <a href="cricketapp/index.html" target="blank"
+            ><h1 class="projectHead">Cricket Score monitoring app</h1></a
+          >
+          <div
+            style="
+              width: 20%;
+              height: 2px;
+              background-image: linear-gradient(
+                to bottom right,
+                green,
+                lightgreen
+              );
+              margin: auto;
+              margin-bottom: 5px;
+            "
+          ></div>
+          <p class="projectPara">
+            A Cricket score storing app. Add all the scores inside this app and
+            it will store that data dynamically.
+          </p>
+          <div class="flexTechBtn">
+            <p class="btn btn-dark">HTML</p>
+            <p class="btn btn-dark">CSS</p>
+            <p class="btn btn-dark">JAVASCRIPT</p>
+            <p class="btn btn-dark">BOOTSTRAP</p>
+          </div>
+
+          <a href="cricketapp/index.html" target="blank"
+            ><button class="btn btn-success visit">Visit</button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <div
+      style="
+        width: 30%;
+        text-align: center;
+        background-image: linear-gradient(
+          to bottom right,
+          rgb(0, 67, 0),
+          rgb(53, 223, 124)
+        );
+        height: 8px;
+        border-radius: 100px;
+        margin: auto;
+        margin-top: 40px;
+      "
+    ></div>
+
+    <div class="technologies">
+      <h1 class="shadeH1" id="technologies">Technologies</h1>
+      <div class="technoFlex">
+        <div class="technoItems">
+          <h1 class="projectHead technoItmH1">
+            <i class="fa-brands fa-square-js"></i> Front-End
+          </h1>
+          <p class="technoPara">
+            I have worked with several different technologies in front-end . I
+            learnt Html, Css, Js, Jquery, Bootstrap, Tailwind Css as front-end
+            designing.
+          </p>
+        </div>
+        <div class="technoItems">
+          <h1 class="projectHead technoItmH1">
+            <i class="fa-brands fa-node"></i> Back-End
+          </h1>
+          <p class="technoPara">
+            On the back-end I worked with Nodejs, Ejs and currently I am
+            learning about databases.
+          </p>
+        </div>
+        <div class="technoItems">
+          <h1 class="projectHead technoItmH1">
+            <i class="fa-solid fa-wand-magic-sparkles"></i> UI/UX
+          </h1>
+          <p class="technoPara">
+            I can work with tools like Canva and I am really interested in
+            learning Graphic Designing.
+          </p>
+        </div>
+      </div>
     </div>
-    <div class="technoItems">
-      <h1 class="projectHead technoItmH1"><i class="fa-brands fa-node"></i> Back-End</h1>
-    <p class="technoPara"> On the back-end I worked with Nodejs, Ejs and currently I am learning about databases.</p>
-  </div>
-    <div class="technoItems ">
-      <h1 class="projectHead technoItmH1">
-        <i class="fa-solid fa-wand-magic-sparkles"></i> UI/UX</h1> <p class="technoPara">I can work with tools like Canva and I am really interested in learning Graphic Designing.</p></div>
-  </div>
 
+    <div
+      style="
+        width: 90%;
+        text-align: center;
+        background-image: linear-gradient(
+          to bottom right,
+          rgb(0, 67, 0),
+          rgb(53, 223, 124)
+        );
+        height: 4px;
+        border-radius: 100px;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+      "
+    ></div>
 
-
-</div>
-  
-  
-<script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html> 
+    <div class="footer">
+      <p style="font-weight: bold; margin: 20px">Level Up Everyday</p>
+      <a href="#intro"   ><button class="btn btn-outline-success" style="margin-bottom: 20px"  onclick="func.sendEmail()">
+        CONTACT
+      </button></a>
+      <div class="socialLinks">
+        <a
+          class="socialLink"
+          style="text-decoration: none; color: white; text-align: center"
+          href="https://github.com/khizzer2323?tab=repositories"
+          target="blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          class="socialLink"
+          href="https://twitter.com"
+          target="blank"
+          style="text-decoration: none; color: white; text-align: center"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a
+          class="socialLink"
+          href="https://instagram.com"
+          target="blank"
+          style="text-decoration: none; color: white; text-align: center"
+          ><i class="fa-instagram fa-brands"></i
+        ></a>
+      </div>
+    </div>
+    </section>
+  </section>
+  <section class="contact hidden">
+    <button class="emailClose" onclick="func.sendEmail()">x</button>
+    <center>
+      <h1 class="emailHeading">CONTACT ME </h1>
+      <form action="mailto:hizarabbasi007@gmail.com" method="Get">
+        <input
+          type="text"
+          id="email"
+          placeholder="Enter your Subject :"
+          name="subject"
+          
+        />
+        <br />
+        <textarea
+        name="body"
+          placeholder="                        Enter your Message here ......."
+          required
+        ></textarea
+        ><br />
+        <button class="btn btn-success send" type="submit" onclick="func.sendEmail()">  SEND</button>
+      </form>
+    </center>
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
